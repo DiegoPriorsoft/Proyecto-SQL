@@ -1,0 +1,7 @@
+SELECT 'clientes' AS tabla, COUNT(*) AS registros FROM tienda.clientes
+UNION ALL
+SELECT 'pedidos', COUNT(*) FROM tienda.pedidos
+UNION ALL
+SELECT 'detalle_pedido', COUNT(*) FROM tienda.detalle_pedido
+UNION ALL
+SELECT 'productos', COUNT(*) FROM tienda.productos;
